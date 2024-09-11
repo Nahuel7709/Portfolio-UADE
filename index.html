@@ -4,32 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página de Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="pages/about.html">Sobre Mí</a></li>
-          <li><a href="pages/portfolio.html">Portafolio</a></li>
-          <li><a href="pages/resume.html">Currículum</a></li>
-          <li><a href="pages/contact.html">Contacto</a></li>
-          <li><a href="pages/skills.html">Habilidades</a></li>
-          <li><a href="pages/certifications.html">Certificaciones</a></li>
-        </ul>
+    <header class="header">
+      <a href="#" class="logo animate__animated animate__bounce"><i class='bx bxl-codepen'></i><span>NM</span></a>
+
+      <input type="checkbox" id="check">
+      <label for="check" class="icons">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-x' id="close-icon"></i>
+      </label>
+
+      <nav class="navbar animate__animated animate__bounce">
+        <a href="#">Inicio</a>
+        <a href="pages/about.html">Sobre Mí</a>
+        <a href="pages/resume.html">Currículum</a>
+        <a href="pages/certifications.html">Certificaciones</a>
+        <a href="pages/contact.html">Contacto</a>
       </nav>
     </header>
-
+      
     <main>
-      <section>
-        <h1>Nahuel Menichetti</h1>
-        <p>Desarrollador Front End y estudiante de Sistemas.</p>
-        <img src="images/profile-photo.jpg" alt="Foto de Nahuel Menichetti" width="200px"/>
+      <section class="home-section">
+        <div>
+          <p>Nahuel Menichetti</p>
+          <h1>Desarrollador <span>Front-End</span></h1>
+          <p>Estudiante de Lic.Sistemas</p>
+        </div>
+        <img src="images/profile-photo.jpg" alt="Foto de Nahuel Menichetti" width="200px" class="profile-photo"/>
       </section>
     </main>
     <footer>
-      <p>&copy; 2024 Nahuel Menichetti. Todos los derechos reservados.</p>
-      <a href="mailto:nmenichetti@uade.edu.ar">Contáctame</a>
+      <p>&copy; 2024 Nahuel Menichetti</p>
+      <ul>
+        <li><a href=""><img src="images/gmail-logo.svg" alt=""></a></li>
+        <li><a href=""><img src="images/github-icon.svg" alt=""></a></li>
+        <li><a href=""><img src="images/linkedin-icon.svg" alt=""></a></li>
+      </ul>
     </footer>
-  </body>
+  </body> 
 </html>

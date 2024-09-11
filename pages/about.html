@@ -4,19 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre Mí</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="about.html">Sobre Mí</a></li>
-          <li><a href="portfolio.html">Portafolio</a></li>
-          <li><a href="resume.html">Currículum</a></li>
-          <li><a href="contact.html">Contacto</a></li>
-          <li><a href="skills.html">Habilidades</a></li>
-          <li><a href="certifications.html">Certificaciones</a></li>
-        </ul>
+    <header class="header">
+      <a href="#" class="logo animate__animated animate__bounce">Logo</a>
+
+      <input type="checkbox" id="check">
+      <label for="check" class="icons">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-x' id="close-icon"></i>
+      </label>
+
+      <nav class="navbar animate__animated animate__bounce">
+        <a href="/">Inicio</a>
+        <a href="about.html">Sobre Mí</a>
+        <a href="resume.html">Currículum</a>
+        <a href="certifications.html">Certificaciones</a>
+        <a href="contact.html">Contacto</a>
       </nav>
     </header>
 
