@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+@keyframes custom-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3); 
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate__pulse-custom {
+  animation: custom-pulse 2s infinite; 
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,8 +41,6 @@ main {
   align-items: center;
   text-align: center;
 }
-
-
 
 /* HEADER */
 
@@ -145,6 +159,85 @@ main {
   object-fit: cover;
 }
 
+/* ABOUT */
+.about-section {
+  padding: 15px;
+  width: 50%;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.about-grid-container {
+  background: rgba(136, 128, 128, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0.5rem 1rem rgba(131, 126, 126, 0.1);
+  transition: 0.3s ease;
+  overflow: hidden;
+  border-radius: 10px;
+  text-align: left;
+  padding: 30px;
+  margin-bottom: 20px;
+  border: solid rgba(137, 43, 226, 0.219) 0.5px;
+  display: flex;
+  flex-direction: column ;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+}
+
+.about-grid-container h1 {
+  color: rgba(177, 94, 255, 0.959);
+  text-align: center;
+}
+
+.about-grid-container h2 {
+  color: rgba(177, 94, 255, 0.959);
+  text-align: center;
+}
+
+.about-grid-container ul {
+  list-style: none;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.about-grid-container ul .hard-skills-group{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.about-grid-container img{
+  width: 30px;
+  height: auto;
+}
+
+.soft-skills-item{
+  
+  display: flex;
+  margin: 10px 0px;
+}
+
+.soft-skills-item span{
+ margin-left: 10px;
+}
+
+
+
+
+
 /* FOOTER */
 footer {
   padding: 1rem;
@@ -155,25 +248,25 @@ footer {
   justify-content: space-around;
 }
 
-footer ul{
+footer ul {
   list-style: none;
   display: flex;
 }
 
-footer ul li{
+footer ul li {
   margin-right: 10px;
 }
 
 footer img {
-  width: 30px; 
-  height: auto; 
-  max-width: 100%; 
-  transition: transform 300ms; 
-  transform: scale(1) rotate(0); 
+  width: 30px;
+  height: auto;
+  max-width: 100%;
+  transition: transform 300ms;
+  transform: scale(1) rotate(0);
 }
 
-footer img:hover{
-  transform: scale(1.25) rotate(6deg); 
+footer img:hover {
+  transform: scale(1.25) rotate(6deg);
 }
 
 /* BREAKPOINTS */
@@ -232,8 +325,20 @@ footer img:hover{
     gap: 10px;
   }
 
-  .home-section div h1{
+  .home-section div h1 {
     font-size: 2rem;
     margin-right: 0px;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 80px;
+  }
+
+  .about-section {
+    padding: 15px;
+    width: 90%;
   }
 }
