@@ -3,45 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Currículum</title>
+    <title>Sobre Mí</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="about.html">Sobre Mí</a></li>
-          <li><a href="portfolio.html">Portafolio</a></li>
-          <li><a href="resume.html">Currículum</a></li>
-          <li><a href="contact.html">Contacto</a></li>
-          <li><a href="skills.html">Habilidades</a></li>
-          <li><a href="certifications.html">Certificaciones</a></li>
-        </ul>
+   <header class="header">
+     <a href="#" class="logo animate__animated animate__bounce"><i class='bx bxl-codepen'></i><span>NM</span></a>
+
+      <input type="checkbox" id="check">
+      <label for="check" class="icons">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-x' id="close-icon"></i>
+      </label>
+
+      <nav class="navbar animate__animated animate__bounce">
+        <a href="/">Inicio</a>
+        <a href="about.html">Sobre Mí</a>
+        <a href="resume.html">Currículum</a>
+        <a href="certifications.html">Certificaciones</a>
+        <a href="contact.html">Contacto</a>
       </nav>
     </header>
 
     <main>
-      <section>
-        <h1>Currículum</h1>
-        <h2>Experiencia Laboral</h2>
-        <ul>
-          <li>Asistente Administrativo (2022-2023)</li>
-          <li>Help Desk (2023-2023)</li>
-          <li>Desarrollador Front-End(2024-Actualidad)</li>
-        </ul>
-        <h2>Educación</h2>
-        <ul>
-          <li>UADE - Licenciatura en Sistemas (2022-Actualidad)</li>
-          <li>Digital House - Desarrollador Web Full Stack (2021-2022)</li>
-        </ul>
-        <a href="../pdf/CV-Nahuel-Menichetti-EN.pdf" download
-          ><button>Descargar Currículum</button></a
-        >
-      </section>
+      <div class="resume-grid">
+        <div class="work-container">
+          <h2>Experiencia Laboral</h2>
+          <div class="w-g">
+            <h3>Administrativo</h3>
+            <p>2021-2023</p>
+          </div>
+          <div class="w-g">
+            <h3>Help Desk</h3>
+            <p>2023-2023</p>
+          </div>
+          <div class="w-g">
+            <h3>Front-End Dev</h3>
+            <p>Actualidad</p>
+          </div>
+        </div>
+        <div class="studies-container">
+          <h2>Educación</h2>
+          <div class="s-g">
+            <img src="../images/uade.svg" alt="UADE logo">
+            <div class="asd">
+              <h3>Lic. en Sistemas</h3>
+              <p>2022-Act</p>
+            </div>
+          </div>
+          <div class="s-g">
+            <img src="../images/dh.svg" alt="Digital House logo">
+            <div class="asd">
+              <h3>Desarrollador Web</h3>
+              <p>2021-2022</p>
+            </div>
+          </div>
+        </div>
+        <div class="certifications-container">
+          <h2>Certificaciones</h2>
+          <div class="c-g">
+            <img src="../images/harvard.svg" alt="HarvardX logo">
+            <div class="asd">
+              <p>Intro to Computer Science</p>
+              <p>2024</p>
+            </div>
+          </div>
+          <div class="c-g">
+            <img src="../images/udemy.svg" alt="Udemy logo">
+            <div class="asd">
+              <p>React Experto</p>
+              <p>2024</p>
+            </div>
+          </div>
+          <div class="c-g">
+            <img src="../images/udemy.svg" alt="Udemy logo">
+            <div class="asd">
+              <p>Full Stack Developer</p>
+              <p>2023</p>
+            </div>
+          </div>
+          <div class="c-g">
+            <img src="../images/udemy.svg" alt="Udemy logo">
+            <div class="asd">
+              <p>TypeScript</p>
+              <p>2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer>
-      <p>&copy; 2024 Nahuel Menichetti. Todos los derechos reservados.</p>
-      <a href="mailto:nmenichetti@uade.edu.ar">Contáctame</a>
+
+    <footer class="animate__animated animate__fadeInLeft">
+      <p>&copy; 2024 Nahuel Menichetti</p>
+      <ul>
+        <li><a href=""><img src="../images/gmail-logo.svg" alt=""></a></li>
+        <li><a href=""><img src="../images/github-icon.svg" alt=""></a></li>
+        <li><a href=""><img src="../images/linkedin-icon.svg" alt=""></a></li>
+      </ul>
     </footer>
+
   </body>
 </html>

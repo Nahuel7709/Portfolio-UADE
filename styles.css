@@ -179,7 +179,7 @@ main {
 
 .about-text {
   background: rgba(136, 128, 128, 0.1);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(20px);
   box-shadow: 0 0.5rem 1rem rgba(131, 126, 126, 0.1);
   transition: 0.3s ease;
   overflow: hidden;
@@ -193,7 +193,7 @@ main {
 
 .currently-studying {
   background: rgba(136, 128, 128, 0.1);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(20px);
   box-shadow: 0 0.5rem 1rem rgba(131, 126, 126, 0.1);
   transition: 0.3s ease;
   overflow: hidden;
@@ -210,20 +210,20 @@ main {
   margin-bottom: 3px;
 }
 
-.currently-studying img{
+.currently-studying img {
   width: 30px;
   height: auto;
   max-width: 100%;
 }
 
-.studying-item{
+.studying-item {
   display: flex;
   justify-content: space-between;
 }
 
 .about-grid-container {
   background: rgba(136, 128, 128, 0.1);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(20px);
   box-shadow: 0 0.5rem 1rem rgba(131, 126, 126, 0.1);
   transition: 0.3s ease;
   overflow: hidden;
@@ -281,6 +281,106 @@ main {
 
 .soft-skills-item p {
   margin-left: 10px;
+}
+
+/* RESUME */
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 10px;
+}
+
+.resume-grid p{
+  font-style: italic;
+  font-size: smaller;
+}
+
+.resume-grid h2 {
+  color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(131, 126, 126, 0.1);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    rgba(177, 94, 255, 0.4),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 8px;
+}
+
+.w-g {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background: rgba(136, 128, 128, 0.1);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0.5rem 1rem rgba(131, 126, 126, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  border: solid rgba(137, 43, 226, 0.219) 0.5px;
+}
+
+
+.s-g {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  background: rgba(136, 128, 128, 0.1);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0.5rem 1rem rgba(131, 126, 126, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  border: solid rgba(137, 43, 226, 0.219) 0.5px;
+}
+
+.s-g img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.asd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.asd p {
+  font-size: 13px;
+}
+
+.c-g img {
+  width: 70px;
+  height: auto;
+  max-width: 100%;
+  transition: transform 300ms;
+  transform: scale(1) rotate(0);
+  margin-right: 10px;
+}
+
+.c-g {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  background: rgba(136, 128, 128, 0.1);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0.5rem 1rem rgba(131, 126, 126, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  border: solid rgba(137, 43, 226, 0.219) 0.5px;
 }
 
 /* FOOTER */
@@ -391,6 +491,14 @@ footer img:hover {
 
   .soft-skills-item {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+  }
+
+  .resume-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
+    margin: 100px 10px 10px 10px;
   }
 }
