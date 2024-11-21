@@ -41,47 +41,51 @@
       </nav>
     </header>
 
-    <main>
-      <div class="contact-container">
-        <div class="contact-title-wrapper">
-          <h1>Contactame</h1>
-          <div class="cell-wrapper">
-            <img src="../images/phone.svg" alt="Telefono">
-            <p>11-2345-6789</p>
-          </div>
-        </div>
-        <form class="contact-form">
-          <label for="name">Nombre</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Juan Perez"
-            required
-          />
-
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="ejemplo@gmail.com"
-            required
-          />
-
-          <label for="message">Mensaje</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            placeholder="Lorem Ipsum dolorsit amet...."
-            required
-          ></textarea>
-
-          <button type="submit">Enviar</button>
-        </form>
+  <main>
+  <div class="contact-container">
+    <div class="contact-title-wrapper">
+      <h1>Contactame</h1>
+      <div class="cell-wrapper">
+        <img src="../images/phone.svg" alt="Telefono">
+        <p>11-2345-6789</p>
       </div>
-    </main>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <label for="name">Nombre</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Juan Perez"
+       
+      />
+
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="ejemplo@gmail.com"
+        
+      />
+
+      <label for="message">Mensaje</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="5"
+        placeholder="Lorem Ipsum dolorsit amet...."
+       
+      ></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <!-- Mensaje de confirmación -->
+    <p id="confirmationMessage" style="display: none; color: green; text-align: center; margin-top: 15px;">
+      ¡Formulario enviado correctamente!
+    </p>
+  </div>
+</main>
 
     <footer class="animate__animated animate__fadeInLeft">
       <div>
@@ -94,5 +98,7 @@
         <li><a href=""><img src="../images/linkedin-icon.svg" alt=""></a></li>
       </ul>
     </footer>
+
+    <script src="../js/formValidation.js"></script>
   </body>
 </html>
